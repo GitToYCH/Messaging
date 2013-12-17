@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="自动回复" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="autore"
+            android:summaryOff="关闭"
+            android:summaryOn="开启"
+            android:title="自动回复" />
+
+        <ListPreference
+            android:dialogTitle="回复间隔"
+            android:dependency="autore" 
+            android:entries="@array/intervallist_preference"
+            android:entryValues="@array/intervallistvalue_preference"
+            android:defaultValue="60"
+            android:key="intervallist"
+            android:summary="对同一号码的回复时间间隔"
+            android:title="回复时间间隔" />
+
+        <PreferenceScreen
+            android:key="ignorelist"
+            android:dependency="autore"
+            android:summary="助手不会回复来自此列表中的号码的短信"
+            android:title="屏蔽号码列表" >
+            <intent
+            android:action="com.symbol.messaging.activity.IgnorelistActivity"
+            android:targetPackage="com.symbol.messaging.activity"
+            android:targetClass="com.symbol.messaging.activity.IgnorelistActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="定时发送" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="autosend"
+            android:summaryOff="关闭"
+            android:summaryOn="开启"
+            android:title="定时发送" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="autosend" 
+            android:key="deleteaftersend"
+            android:summaryOff="关闭"
+            android:summaryOn="开启"
+            android:title="发送后删除计划" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
