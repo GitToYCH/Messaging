@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tabbackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#77000000"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="短信大全"
+            android:textColor="#99ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/festival"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="#44ffffff"
+            android:text="节日送祝福"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/personal"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/festival"
+            android:layout_below="@+id/festival"
+            android:layout_marginTop="54dp"
+            android:background="#44ffffff"
+            android:text="单独给朋友"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/mycollect"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/personal"
+            android:layout_below="@+id/personal"
+            android:layout_marginTop="54dp"
+            android:background="#44ffffff"
+            android:text="我的收藏"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbackground"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="节日送祝福"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/yuandan"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="元旦" />
+
+            <Button
+                android:id="@+id/chunjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="春节" />
+
+            <Button
+                android:id="@+id/qingrenjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="情人节" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/funvjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="妇女节" />
+
+            <Button
+                android:id="@+id/yurenjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="愚人节" />
+
+            <Button
+                android:id="@+id/laodongjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="劳动节" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/muqinjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="母亲节" />
+
+            <Button
+                android:id="@+id/fuqinjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="父亲节" />
+
+            <Button
+                android:id="@+id/duanwujie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="端午节" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/ertongjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="儿童节" />
+
+            <Button
+                android:id="@+id/ganenjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="感恩节" />
+
+            <Button
+                android:id="@+id/zhongqiujie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="中秋节" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/guoqinjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="国庆节" />
+
+            <Button
+                android:id="@+id/chongyangjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="重阳节" />
+
+            <Button
+                android:id="@+id/qixijie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="七夕节" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/jiaoshijie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="教师节" />
+
+            <Button
+                android:id="@+id/guangunjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="光棍节" />
+
+            <Button
+                android:id="@+id/shengdanjie"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="10dip"
+                android:background="#44ffffff"
+                android:text="圣诞节" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

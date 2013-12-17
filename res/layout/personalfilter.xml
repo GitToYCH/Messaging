@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbackground"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal"
+            android:text="给朋友的"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/jiehun"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="恭贺新婚"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/shengzi"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="喜得贵子"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/shengri"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="生日祝福"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/gaokao"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="高考激励"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/ganxie"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="衷心感谢"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/daoqian"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#44ffffff"
+            android:gravity="center_horizontal"
+            android:text="诚心道歉"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</ScrollView>

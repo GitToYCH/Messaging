@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tabbackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="节日送祝福"
+        android:textSize="50sp" />
+	<GridView
+        android:id="@+id/gv_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#0000"
+        android:horizontalSpacing="1.5dip"
+        android:verticalSpacing="1.5dip" 
+        android:numColumns="3"
+        android:stretchMode="columnWidth">
+    </GridView>
+    
+</LinearLayout>

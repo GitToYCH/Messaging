@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/ignore_delete"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"        
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:src="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="5dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:src="@drawable/personimage" />
+
+    <TextView
+        android:id="@+id/ignore_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="杨浩" />
+
+    <TextView
+        android:id="@+id/ignore_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ignore_delete"
+        android:layout_marginRight="51dp"
+        android:layout_toLeftOf="@+id/ignore_delete"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="18285113775" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/autosend_add_name"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ignore_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toLeftOf="@+id/ignore_name_addforcontacts"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ignore_name_edit"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="号码"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ignore_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/ignore_name_edit"
+            android:inputType="number" >
+        </EditText>
+
+        <Button
+            android:id="@+id/ignore_addOK"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ignore_phone_edit"
+            android:layout_marginTop="10dip"
+            android:text="@string/autosend_add_addOK" />
+
+        <Button
+            android:id="@+id/ignore_name_addforcontacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ignore_name_edit"
+            android:layout_alignBottom="@+id/ignore_name_edit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/contact" />
+
+        <Button
+            android:id="@+id/ignore_reset"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ignore_addOK"
+            android:layout_alignBottom="@+id/ignore_addOK"
+            android:layout_alignRight="@+id/ignore_phone_edit"
+            android:text="@string/autosend_add_reset" />
+    </RelativeLayout>
+
+</LinearLayout>

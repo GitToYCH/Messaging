@@ -45,15 +45,19 @@
             android:name=".TabIndex"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-        <activity android:name=".SmslistActivity" >
+        <activity android:name=".SmslistActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"  >
         </activity>
         <activity android:name=".MainActivity" >
         </activity>
-        <activity android:name=".Festivtfilter" >
+        <activity android:name=".Festivefilter" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
-        <activity android:name=".Personalfilter" >
+        <activity android:name=".Personalfilter" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
-        <activity android:name=".Autosend_addActivity" >
+        <activity android:name=".Autosend_addActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity android:name=".AutosendHomeActivity" >
         </activity>
@@ -65,16 +69,19 @@
         </activity>
         <activity android:name=".AutoreHomeActivity" >
         </activity>
-        <activity android:name=".Autore_addActivity" >
+        <activity android:name=".Autore_addActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
-        <activity android:name=".LoglistActivity" >
+        <activity android:name=".LoglistActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity android:name=".LogmoreActivity" >
         </activity>
         <activity android:name=".SettingActivity"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
-        <activity android:name=".IgnorelistActivity">
+        <activity android:name=".IgnorelistActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
         </activity>
         <activity
             android:name=".Ignore_addActivity"

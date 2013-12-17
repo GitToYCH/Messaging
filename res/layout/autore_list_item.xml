@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/deleteaotore"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:src="@drawable/delete" />
+
+    <CheckBox
+        android:id="@+id/isopenautore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" 
+        android:layout_marginLeft="10dip"/>
+
+    <TextView
+        android:id="@+id/autore_list_endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/deleteaotore"
+        android:gravity="right"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="2013-05-10 13:00"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/autore_list_keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/isopenautore"
+        android:layout_toRightOf="@+id/isopenautore"
+        android:singleLine="true"
+        android:text="关键字：星期五"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/autore_list_starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/isopenautore"
+        android:contentDescription="@string/app_name"
+        android:gravity="left"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="2013-05-10 13:00"
+        android:textColor="#000000" />
+
+</RelativeLayout>

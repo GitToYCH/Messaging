@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#99000000">
+        
+        <ImageView
+            android:id="@+id/ignore_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/goback"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="屏蔽号码列表"
+            android:textColor="#99ffffff"
+            android:textSize="24sp" />
+        <ImageView
+            android:id="@+id/ignore_add"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ignore_add"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+    
+
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:divider="@drawable/divider"
+        android:dividerHeight="2dp"
+        android:cacheColorHint="#00000000"
+        android:background="#44000000">
+    </ListView>
+
+</LinearLayout>

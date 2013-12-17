@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/deleteautosendbutton"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"        
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:src="@drawable/delete"  />
+
+    <CheckBox
+        android:id="@+id/isopenautosend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"    
+        android:layout_alignBottom="@+id/deleteautosendbutton"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/autosend_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/isopenautosend"
+        android:layout_alignBottom="@+id/isopenautosend"
+        android:layout_toRightOf="@+id/isopenautosend"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="test" />
+
+    <TextView
+        android:id="@+id/autosend_list_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autosend_list_title"
+        android:layout_alignBottom="@+id/autosend_list_title"
+        android:layout_toLeftOf="@+id/deleteautosendbutton"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="2013-5-10 23:20" />
+
+</RelativeLayout>
